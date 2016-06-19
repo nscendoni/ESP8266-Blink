@@ -33,8 +33,8 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
-const char *ssid = "Thomson7E785B";
-const char *password = "2400BC72E4";
+const char *ssid = "***";
+const char *password = "***";
 
 ESP8266WebServer server ( 80 );
 
@@ -95,8 +95,7 @@ void setup ( void ) {
 	pinMode ( led, OUTPUT );
 	digitalWrite ( led, 0 );
 	Serial.begin ( 115200 );
-	//WiFi.begin ( ssid, password );
-  WiFi.begin ( "Thomson7E785B", "2400BC72E4" );
+	WiFi.begin ( ssid, password );
 	Serial.println ( "" );
 
 	// Wait for connection
